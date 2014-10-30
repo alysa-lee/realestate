@@ -20,12 +20,31 @@
     </div>
 </div>
 
-<footer class="bk-footer">
+<!--<footer class="bk-footer">
     <div class="wrapper clearfix">
         {{widget('content', 'footercolumn1content1', {"content":"<p>CONTACTOS</p>"})|raw}}        
         {{widget('content', 'footercolumn1content2', {"content":"<h2>LOREM IPSUM ALAM YOU?</h2>"})|raw}}       
         {{widget('profile', 'footercolumn1profileEmail', { 'profileType':'email', 'email':'profile'})|raw}}
         {{widget('profile', 'footercolumn1profilePhone', { 'profileType':'phone', 'phone':'profile'})|raw}} 
+    </div>
+</footer>-->
+<footer class="bk-footer">
+    <div class="wrapper clearfix">
+        <div class="responsivecolumns columns-three-33-34-33">
+           <div class="column columns-three-left">
+                {{widget('content', 'footercolumn1content1', {"content":"<h4>Company Address</h4>"})|raw}}
+                {{widget('profile', 'footercolumn1profileaddress', { 'profileType':'address', 'address':'profile'})|raw}}
+           </div>
+           <div class="column columns-three-middle">
+                {{widget('content', 'footercolumn2content1', {"content":"<h4>Contact Us</h4>"})|raw}}
+                {{widget('profile', 'footercolumn2phone', { 'profileType':'phone', 'phone':'profile'})|raw}}
+           </div>
+           <div class="column columns-three-right">
+                {{widget('content', 'footercolumn3content1', {"content":"<h4>Find Us Here</h4>"})|raw}}
+                {{widget('profile', 'footercolumn3profilesocialicons', { 'profileType' : 'socialicons' })|raw}}
+               
+           </div>
+        </div>
     </div>
 </footer>
 
