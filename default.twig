@@ -4,12 +4,15 @@
 
 <div class="bk-pt-default">
 
+<div class="header-wrapper clearfix">
+    {{widget('image', 'thisunqiuewidgetname', { 'src': asset('images/feature-bg2.jpg'), 'alt': 'feature-bg', 'fileName': 'feature-bg2.jpg', 'imageSize': '1500 x 230', 'imageWidth': '1500px'})|raw}}
 <header class="bk-header">
     <div class="wrapper clearfix">
         {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
         {{widget('extendednavigation', 'navigationheader', {"align":"right"})|raw}}
     </div>
 </header>
+</div>
 
 <div class="canvas">
     <div class="main wrapper clearfix">
